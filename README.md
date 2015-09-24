@@ -18,7 +18,7 @@ $ npm start
 
 ## Build
 
-Set baseUrl in `config.json` if needed.
+Set baseUrl in `config.json` if hosting site from a relative URL (i.e. not root /)
 
 ```bash
 $ npm run build

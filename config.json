@@ -4,7 +4,7 @@
     "title": "Kevin and Katy"
   },
   "plugins": [
-    "wintersmith-sass"
+    "wintersmith-libsass"
   ],
   "jade": {
     "pretty": true
