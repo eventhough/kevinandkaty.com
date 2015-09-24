@@ -1,7 +1,15 @@
 {
-  "dependencies": {
-    "wintersmith-autoprefixer-sass": "^0.1.0",
-    "wintersmith-sass": "^0.3.0"
+  "dependencies": {},
+  "private": "true",
+  "scripts": {
+    "start": "wintersmith preview",
+    "build": "wintersmith build --config config-prod.json",
+    "deploy-gh-pages": "git subtree push --prefix build origin gh-pages"
   },
-  "private": "true"
+  "devDependencies": {
+    "wintersmith": "^2.2.1",
+    "wintersmith-autoprefixer-sass": "^0.1.0",
+    "wintersmith-makerelative": "^1.0.0",
+    "wintersmith-sass": "^0.3.0"
+  }
 }

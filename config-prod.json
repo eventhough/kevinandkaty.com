@@ -1,0 +1,10 @@
+{
+  "locals": {
+    "owner": "Kevin Wu, Katy Tsai",
+    "title": "Kevin and Katy"
+  },
+  "plugins": [
+    "wintersmith-autoprefixer-sass"
+  ],
+  "baseUrl": "/kevinandkaty.com/"
+}
