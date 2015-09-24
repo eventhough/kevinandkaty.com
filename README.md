@@ -18,7 +18,7 @@ $ npm start
 
 ## Build
 
-Set baseUrl in `config-prod.json`
+Set baseUrl in `config.json` if needed.
 
 ```bash
 $ npm run build
@@ -29,3 +29,5 @@ $ npm run build
 ```bash
 $ git subtree push --prefix build origin gh-pages
 ```
+
+For information on setting up a CNAME record go [here](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/).
