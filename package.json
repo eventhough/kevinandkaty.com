@@ -3,7 +3,8 @@
   "private": "true",
   "scripts": {
     "start": "wintersmith preview",
-    "build": "wintersmith build --config config-prod.json",
+    "build": "npm run clean && wintersmith build --config config-prod.json",
+    "clean": "rm -rf build/assets && rm -rf build/*.html",
     "deploy-gh-pages": "git subtree push --prefix build origin gh-pages"
   },
   "devDependencies": {
