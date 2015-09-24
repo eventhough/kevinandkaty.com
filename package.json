@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "wintersmith-autoprefixer-sass": "^0.1.0",
+    "wintersmith-sass": "^0.3.0"
+  },
+  "private": "true"
+}

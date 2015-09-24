@@ -1,0 +1,18 @@
+// $compressed: true;
+
+@import './partials/normalize';
+@import url(https://fonts.googleapis.com/css?family=Petit+Formal+Script|EB+Garamond);
+
+html {
+  background: url('./../images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  // font-family: 'Petit Formal Script', cursive;
+}
+
+body {
+  font-family: 'EB Garamond', serif;
+}
+
+p {
+  color: #222;
+}
