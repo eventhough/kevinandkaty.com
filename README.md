@@ -5,12 +5,23 @@ Wedding website built with [wintersmith](http://wintersmith.io/)
 
 ```bash
 $ npm install -g wintersmith
+$ git clone git@github.com:eventhough/kevinandkaty.com.git
+$ cd kevinandkaty.com
+$ npm install
+```
+
+## Run Project
+
+```bash
+$ npm start
 ```
 
 ## Build
 
+Set baseUrl in `config-prod.json`
+
 ```bash
-$ wintersmith build
+$ npm run build
 ```
 
 ## Deploy to gh-pages

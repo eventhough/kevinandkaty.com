@@ -4,6 +4,9 @@
     "title": "Kevin and Katy"
   },
   "plugins": [
-    "wintersmith-autoprefixer-sass"
-  ]
+    "wintersmith-sass"
+  ],
+  "jade": {
+    "pretty": true
+  }
 }
