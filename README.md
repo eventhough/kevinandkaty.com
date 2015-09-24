@@ -4,7 +4,7 @@ Wedding website built with [wintersmith](http://wintersmith.io/)
 ## Set up environment
 
 ```bash
-$ npm install -g wintersmith
+$ npm install -g wintersmith postcss-cli autoprefixer
 $ git clone git@github.com:eventhough/kevinandkaty.com.git
 $ cd kevinandkaty.com
 $ npm install
