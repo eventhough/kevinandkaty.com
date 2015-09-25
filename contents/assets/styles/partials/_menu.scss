@@ -1,4 +1,4 @@
-.custom-menu .pure-menu-heading, .custom-menu .pure-menu-link {
+.custom-menu .pure-menu-link {
   &:hover {
     font-weight: 600;
   }
@@ -59,6 +59,10 @@
   font-family: 'The Girl Next Door', 'Antic Slab', serif;
   padding: 0 1em;
   font-size: 25px;
+
+  &:hover {
+    font-weight: 400;
+  }
 }
 
 .custom-menu-toggle {
