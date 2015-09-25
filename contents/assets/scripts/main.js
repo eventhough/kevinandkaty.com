@@ -1,6 +1,27 @@
-(function (window, document) {
-  document.getElementById('toggle').addEventListener('click', function (e) {
-    document.getElementById('tuckedMenu').classList.toggle('custom-menu-tucked');
-    document.getElementById('toggle').classList.toggle('x');
+$(document).ready(function() {
+  setMenuItemActive();
+
+  $('#toggle').click(function (e) {
+    $('#tuckedMenu').toggleClass('custom-menu-tucked');
+    $('#toggle').toggleClass('x');
   });
-})(this, this.document);
+});
+
+function setMenuItemActive() {
+  console.log(window.location.href);
+  var regex = /.*\/(\w+)(.html)?/;
+
+  var matches = window.location.href.match(regex);
+
+  var page;
+
+  if (matches) {
+    page = matches[1];
+    console.log(page);
+    if ($('#' + page).length == 1) {
+      $('#' + page).toggleClass('active');
+    } else {
+      $('#index').toggleClass('active');
+    }
+  }
+}

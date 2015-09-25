@@ -3,6 +3,6 @@ title: "The Wedding"
 template: wedding.jade
 ---
 
-# About Us
+# The Wedding
 
 Our story is awesome...

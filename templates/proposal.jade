@@ -1,0 +1,8 @@
+extends layout
+
+block title
+  = page.title
+  
+block content
+  section.proposal
+    != contents['proposal.md'].html
