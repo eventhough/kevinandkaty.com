@@ -1,6 +1,6 @@
 ---
 title: "The Proposal"
-template: proposal.jade
+template: proposal/index.jade
 ---
 
 # The Proposal

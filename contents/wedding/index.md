@@ -1,6 +1,6 @@
 ---
 title: "The Wedding"
-template: wedding.jade
+template: wedding/index.jade
 ---
 
 # The Wedding

@@ -1,8 +1,8 @@
-extends layout
+extends ../layout
 
 block title
   = page.title
   
 block content
   section.proposal
-    != contents['proposal.md'].html
+    != contents['proposal']['index.md'].html

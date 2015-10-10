@@ -1,6 +1,6 @@
 ---
 title: "Accommodations"
-template: accommodations.jade
+template: accommodations/index.jade
 ---
 
 # Accommodations

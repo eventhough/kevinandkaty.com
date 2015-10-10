@@ -1,10 +1,14 @@
 {
+  "contents": "./contents",
+  "templates": "./templates",
+  "views": null,
   "locals": {
-    "owner": "Kevin Wu, Katy Tsai",
+    "owner": "Kevin Wu & Katy Tsai",
     "title": "Kevin and Katy"
   },
   "plugins": [
-    "wintersmith-libsass"
+    "wintersmith-libsass",
+    "wintersmith-livereload"
   ],
   "jade": {
     "pretty": true

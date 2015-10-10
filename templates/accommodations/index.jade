@@ -1,8 +1,8 @@
-extends layout
+extends ../layout
 
 block title
   = page.title
   
 block content
   section.accommodations
-    != contents['accommodations.md'].html
+    != contents['accommodations']['index.md'].html
