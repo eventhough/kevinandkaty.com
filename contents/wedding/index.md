@@ -13,7 +13,7 @@ Our wedding will be held at The Barn at Tyge William Cellars. The Barn is still 
 
 ## Location and Parking
 
-[Google Map Link](https://www.google.com/maps/place/Cornerstone+Sonoma/@38.2277835,-122.4598337,17z/data=!3m1!4b1!4m2!3m1!1s0x8085af4f947c00b3:0xdb4eb85132580675)
+[Google Map](https://www.google.com/maps/place/23570+Arnold+Dr,+Sonoma,+CA+95476/@38.2277757,-122.4576599,17z/data=!3m1!4b1!4m2!3m1!1s0x8085af4f947c00b3:0x3e15948310657dd8)
 
 The Barn is located just past Cornerstone Sonoma. Continue along Wagner Rd until you see a right turn for The Barn.
 
