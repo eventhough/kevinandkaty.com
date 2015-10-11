@@ -11,4 +11,4 @@ template: registry/index.jade
 
 ## Wanderable
 
-Coming soon!
+Coming soon...

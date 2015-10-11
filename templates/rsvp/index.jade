@@ -1,0 +1,8 @@
+extends ../layout
+
+block title
+  = page.title
+  
+block content
+  section.registry
+    != contents['rsvp']['index.md'].html
