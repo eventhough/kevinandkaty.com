@@ -8,14 +8,50 @@
 
 @import './partials/variables';
 @import './partials/overrides'; // pure css overrides
+@import './partials/photoswipe';
+@import './default-skin/default-skin';
 @import './partials/menu';
 
 html {
   background: url('./../images/background.jpg') no-repeat center center fixed;
-  background-size: cover;
   background-position: 58%;
+  background-size: cover;
 }
 
-p {
-  color: #222;
+.container {
+  bottom: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#content {
+  flex: 1 0 auto;
+}
+
+.content {
+  background-color: rgba($cream, .5);
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px $gray;
+  color: $body-text-color;
+  margin: 30px 20px 20px;
+  padding: 20px;
+}
+
+footer {
+  background-color: rgba($dark-blue, 0.75);
+}
+
+.footer {
+  text-align: center;
+  p {
+    color: white;
+  }
+
+  a {
+    color: white;
+  }
 }
