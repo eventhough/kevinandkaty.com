@@ -3,6 +3,6 @@
   "input": "build/assets/styles/main.css",
   "output": "build/assets/styles/main.css",
   "autoprefixer": {
-    "browsers": "> 5%"
+    "browsers": "last 2 versions"
   }
 }
