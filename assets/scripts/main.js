@@ -1,4 +1,6 @@
-$(document).ready(function() {
+var $foo;
+
+$(document).ready(function () {
   setMenuItemActive();
 
   $('#toggle').click(function (e) {
@@ -6,7 +8,28 @@ $(document).ready(function() {
     $('#toggle').toggleClass('x');
   });
 
-  openPhotoSwipe();
+  $('.picture').each(function () {
+    $(this).click(function (evt) {
+      evt.preventDefault();
+      var items = [];
+
+      var $href = $(this).attr('href');
+      var $size = $(this).data('size').split('x');
+      var $width = $size[0];
+      var $height = $size[1];
+
+      var item = {
+        src: $href,
+        w: $width,
+        h: $height
+      }
+
+      items.push(item);
+      openPhotoSwipe(items);
+    })
+  });
+
+  resizeYoutubeEmbeds();
 });
 
 function setMenuItemActive() {
@@ -26,31 +49,54 @@ function setMenuItemActive() {
   }
 }
 
-function openPhotoSwipe() {
-  var pswpElement = document.querySelectorAll('.pswp')[0];
+function openPhotoSwipe(items) {
+  var $pswp = $('.pswp')[0];
 
-  // build items array
-  var items = [
-      {
-          src: 'http://placehold.it/600x400',
-          w: 600,
-          h: 400
-      },
-      {
-          src: 'http://placehold.it/1200x900',
-          w: 1200,
-          h: 900
-      }
-  ];
-
-  // define options (if needed)
   var options = {
-      // optionName: 'option value'
-      // for example:
-      index: 0 // start at first slide
-  };
+    index: 0,
+    fullscreenEl: false,
+    shareEl: false
+  }
 
   // Initializes and opens PhotoSwipe
-  var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+  var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
   gallery.init();
+}
+
+function resizeYoutubeEmbeds() {
+  // Find all YouTube videos
+  var $allVideos = $("iframe[src^='//www.youtube.com']"),
+
+      // The element that is fluid width
+      $fluidEl = $("body");
+
+  // Figure out and save aspect ratio for each video
+  $allVideos.each(function() {
+
+    $(this)
+      .data('aspectRatio', this.height / this.width)
+
+      // and remove the hard coded width/height
+      .removeAttr('height')
+      .removeAttr('width');
+
+  });
+
+  // When the window is resized
+  $(window).resize(function() {
+
+    var newWidth = $fluidEl.width();
+
+    // Resize all videos according to their own aspect ratio
+    $allVideos.each(function() {
+
+      var $el = $(this);
+      $el
+        .width(newWidth)
+        .height(newWidth * $el.data('aspectRatio'));
+
+    });
+
+  // Kick off one resize to fix all videos on page load
+  }).resize();
 }
