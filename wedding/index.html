@@ -9,57 +9,112 @@
     <link rel="shortcut icon" href="/assets/images/favicon.ico">
     <link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/assets/images/favicon-16x16.png" sizes="16x16">
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-    <!--if lte IE 8-->
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
-    <!-- [if gt IE 8] <!-->
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
-    <!-- <![endif]-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"><!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css"><![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css"><!--<![endif]-->
     <link rel="stylesheet" href="/assets/styles/main.css">
   </head>
   <body>
-    <header>
-      <div class="custom-menu-wrapper">
-        <div class="pure-menu custom-menu custom-menu-top"><a href="/" class="pure-menu-heading custom-menu-brand">Kevin and Katy</a><a id="toggle" href="#" class="custom-menu-toggle">
-            <s class="bar"></s>
-            <s class="bar"></s></a></div>
-        <div id="tuckedMenu" class="pure-menu pure-menu-horizontal pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked">
-          <div class="custom-menu-screen"></div>
-          <ul class="pure-menu-list">
-            <li class="pure-menu-item"><a href="/" id="index" class="pure-menu-link">Home</a></li>
-            <li class="pure-menu-item"><a href="/test" id="test" class="pure-menu-link">Test</a></li>
-            <li class="pure-menu-item"><a href="/about" id="about" class="pure-menu-link">About Us</a></li>
-            <li class="pure-menu-item"><a href="/proposal" id="proposal" class="pure-menu-link">The Proposal</a></li>
-            <li class="pure-menu-item"><a href="/photos" id="photos" class="pure-menu-link">Photos</a></li>
-            <li class="pure-menu-item"><a href="/wedding" id="wedding" class="pure-menu-link">The Wedding</a></li>
-            <li class="pure-menu-item"><a href="/accommodations" id="accommodations" class="pure-menu-link">Accommodations</a></li>
-            <li class="pure-menu-item"><a href="/registry" id="registry" class="pure-menu-link">Registry</a></li>
-          </ul>
+    <div class="container">
+      <header>
+        <div class="custom-menu-wrapper">
+          <div class="pure-menu custom-menu custom-menu-top"><a href="/" class="pure-menu-heading custom-menu-brand">Kevin and Katy</a><a id="toggle" href="#" class="custom-menu-toggle">
+              <s class="bar"></s>
+              <s class="bar"></s></a></div>
+          <div id="tuckedMenu" class="pure-menu pure-menu-horizontal pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked">
+            <div class="custom-menu-screen"></div>
+            <ul class="pure-menu-list">
+              <li class="pure-menu-item"><a href="/" id="index" class="pure-menu-link">Home</a></li>
+              <li class="pure-menu-item"><a href="/about" id="about" class="pure-menu-link">About Us</a></li>
+              <li class="pure-menu-item"><a href="/proposal" id="proposal" class="pure-menu-link">The Proposal</a></li>
+              <li class="pure-menu-item"><a href="/photos" id="photos" class="pure-menu-link">Photos</a></li>
+              <li class="pure-menu-item"><a href="/wedding" id="wedding" class="pure-menu-link">The Wedding</a></li>
+              <li class="pure-menu-item"><a href="/accommodations" id="accommodations" class="pure-menu-link">Accommodations</a></li>
+              <li class="pure-menu-item"><a href="/registry" id="registry" class="pure-menu-link">Registry</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </header>
-    <div id="content">
-      <div class="pure-g">
-        <div class="pure-u-1">
-          <section class="wedding"><h1 id="the-wedding">The Wedding</h1>
+      </header>
+      <div id="content">
+        <div class="pure-g">
+          <div class="pure-u-1">
+            <div class="pure-u-1 pure-u-md-2-5">
+              <div class="content">
+                <section class="wedding"><h1 id="the-wedding">The Wedding</h1>
 <p>Our story is awesome...</p>
 
-          </section>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="pure-g">
+          <div class="pure-u-1">
+            <section>
+              <div class="pure-u-md-1-3"></div>
+              <div class="pure-u-1 pure-u-md-1-3 footer">
+                <p> <small>&copy; 2015 Kevin Wu &amp; Katy Tsai</small><br><small> <a href="https://github.com/eventhough/kevinandkaty.com">Github</a></small></p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Root element of PhotoSwipe. Must have class pswp.-->
+    <div tabindex="-1" role="dialog" aria-hidden="true" class="pswp">
+      <!--
+      Background of PhotoSwipe.
+      It's a separate element as animating opacity is faster than rgba().
+      -->
+      <div class="pswp__bg"></div>
+      <!-- Slides wrapper with overflow:hidden.-->
+      <div class="pswp__scroll-wrap">
+        <!--
+        Container that holds slides.
+        PhotoSwipe keeps only 3 of them in the DOM to save memory.
+        Don't modify these 3 pswp__item elements, data is added later on.
+        -->
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed.-->
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <!-- Controls are self-explanatory. Order can be changed.-->
+            <div class="pswp__counter"></div>
+            <button title="Close (Esc)" class="pswp__button pswp__button--close"></button>
+            <button title="Share" class="pswp__button pswp__button--share"></button>
+            <button title="Toggle fullscreen" class="pswp__button pswp__button--fs"></button>
+            <button title="Zoom in/out" class="pswp__button pswp__button--zoom"></button>
+            <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR-->
+            <!-- element will get class pswp__preloader--active when preloader is running-->
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div>
+          </div>
+          <button title="Previous (arrow left)" class="pswp__button pswp__button--arrow--left"></button>
+          <button title="Next (arrow right)" class="pswp__button pswp__button--arrow--right"></button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="pure-g">
-        <div class="pure-u-1">
-          <section>
-            <p>&copy; 2015 Kevin Wu &amp; Katy Tsai</p>
-            <p><a href="https://github.com/jnordberg/wintersmith">Github</a>
-            </p>
-          </section>
-        </div>
-      </div>
-    </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/photoswipe-ui-default.min.js"></script>
     <script type="text/javascript" src="/assets/scripts/main.js"></script>
   </body>
 </html>
