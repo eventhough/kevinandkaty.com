@@ -2,7 +2,7 @@
   "dependencies": {},
   "private": "true",
   "scripts": {
-    "start": "npm run build && wintersmith preview",
+    "start": "npm run clean && wintersmith preview",
     "build": "npm run clean && wintersmith build && postcss --config postcss.json",
     "clean": "rm -rf build/*",
     "deploy-gh-pages": "git subtree push --prefix build origin gh-pages"
