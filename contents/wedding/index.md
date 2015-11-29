@@ -5,7 +5,7 @@ template: wedding/index.jade
 
 # The Wedding
 
-Our wedding will be held at The Barn at Tyge William Cellars. The Barn is still under construction and will be ready by winter 2015.
+Our wedding will be held at The Barn at Tyge William Cellars.
 
 <a href="http://westphoria.sunset.com/2015/06/18/big-dreams-for-our-new-outpost-in-sonoma/">
   <img class="pure-img" src="/wedding/barn-tyge-william.jpg" itemProp="thumbnail" alt="The Barn at Tyge William Cellars">
@@ -19,7 +19,7 @@ The Barn is located just past Cornerstone Sonoma. Continue along Wagner Rd until
 
 ## Ceremony
 
-The ceremony will begin promptly at 4:30pm. Please arrive at 4pm to enjoy refreshments.
+The ceremony will begin promptly at 4:00pm. Please arrive at 3:30pm to enjoy refreshments.
 
 ## Shuttles
 

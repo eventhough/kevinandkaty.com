@@ -1,0 +1,17 @@
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class*='pure-u'] {
+  color: #464646;
+  font-family: 'Antic Slab', serif;
+}
+.pure-menu-active > .pure-menu-link,
+.pure-menu-link:hover,
+.pure-menu-link:focus {
+  background-color: #66ba5e;
+}
+.pure-menu-heading {
+  text-transform: none;
+}
