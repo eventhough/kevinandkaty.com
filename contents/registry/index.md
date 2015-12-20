@@ -7,7 +7,7 @@ template: registry/index.jade
 
 ## Heath Ceramics
 
-[![Heath Ceramics](heath-ceramics.gif)](http://www.heathceramics.com/giftregistry/view/index/id/0e8bda8cb0bf600dc7dae50916da21be/)
+[![Heath Ceramics](heath-ceramics.gif)](http://www.heathceramics.com/giftregistry/view/index/id/aff3cfa03fc14e4fcfdf13c885aa93b6/)
 
 ## Honeymoon Registry
 
