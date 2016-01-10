@@ -8,8 +8,7 @@
     "deploy-gh-pages": "git subtree push --prefix build origin gh-pages"
   },
   "devDependencies": {
-    "readable-stream": "^2.0.5",
-    "wintersmith": "^2.2.4",
+    "wintersmith": "^2.2.5",
     "wintersmith-less": "^1.0.0",
     "wintersmith-livereload": "^0.2.2"
   }
