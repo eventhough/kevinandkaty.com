@@ -11,4 +11,4 @@ template: registry/index.jade
 
 ## Honeymoon Registry
 
-Coming soon...
+[![Honeyfund](honeyfund-logo.png)](https://www.honeyfund.com/wedding/KatyAndKevinWed)
