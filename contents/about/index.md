@@ -1,6 +1,6 @@
 ---
 title: "About Us"
-template: about/index.jade
+template: page.jade
 ---
 
 # About Us

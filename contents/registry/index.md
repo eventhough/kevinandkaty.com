@@ -1,6 +1,6 @@
 ---
 title: "Registry"
-template: registry/index.jade
+template: page.jade
 ---
 
 # Registry

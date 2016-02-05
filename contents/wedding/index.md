@@ -1,6 +1,6 @@
 ---
 title: "The Wedding"
-template: wedding/index.jade
+template: page.jade
 ---
 
 # The Wedding
@@ -13,7 +13,7 @@ Our wedding will be held at The Barn at Tyge William Cellars.
 
 ## Location and Parking
 
-[Google Map](https://www.google.com/maps/place/23570+Arnold+Dr,+Sonoma,+CA+95476/@38.2277757,-122.4576599,17z/data=!3m1!4b1!4m2!3m1!1s0x8085af4f947c00b3:0x3e15948310657dd8)
+[Google Map](https://www.google.com/maps/place/150+Wagner+Rd,+Sonoma,+CA+95476/@38.228457,-122.4563757,17z/data=!3m1!4b1!4m2!3m1!1s0x8085af4e44845591:0xd6177cad4bf2207c)
 
 The Barn is located just past Cornerstone Sonoma. Continue along Wagner Rd until you see a right turn for The Barn.
 

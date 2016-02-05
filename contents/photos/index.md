@@ -1,6 +1,6 @@
 ---
 title: "Photos"
-template: photos/index.jade
+template: page.jade
 ---
 
 # Photos
