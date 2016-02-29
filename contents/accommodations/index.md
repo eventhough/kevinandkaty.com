@@ -8,6 +8,8 @@ template: page.jade
 Hotels in Sonoma are filling up very quickly for the weekend of May 21. Please
 consider booking a place to stay as soon as possible.
 
+*If you have any questions, please contact us at [kevinandkaty2016@gmail.com](mailto:kevinandkaty2016@gmail.com).*
+
 ## Wedding Room Block
 
 We have 20 rooms available at the [Sheraton Sonoma Petaluma][sheraton].
